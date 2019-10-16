@@ -9,7 +9,7 @@ $passarid_fa = mysqli_fetch_assoc($passarid);
 $num_pag = $passarid_fa['id_jornal'];
 
 
-header("location: http://pare.jf.ifsudestemg.edu.br/biblioteca/_crud/index.php");
+header("location: http://localhost/_crud/index.php");
 
 $codigo_delete = "DELETE FROM jornal WHERE id_jornal = '$idjornal'";
 

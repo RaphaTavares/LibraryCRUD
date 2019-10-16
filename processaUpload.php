@@ -21,9 +21,9 @@ $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
 
 if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
     $kuery = mysqli_query($conn, $codigokuery);
-    echo "<META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://pare.jf.ifsudestemg.edu.br/biblioteca/_crud/edicao.php?id_jornal=$id_jornal'>";
+    echo "<META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/_crud/edicao.php?id_jornal=$id_jornal'>";
 } else {
-    echo "<META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://pare.jf.ifsudestemg.edu.br/biblioteca/_crud/index.php'>";
+    echo "<META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://localhost/_crud/index.php'>";
     echo "<script>
        alert(\'A imagem não foi cadastrada com sucesso.\');
    </script>";

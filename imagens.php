@@ -41,16 +41,16 @@ while($row_imagens = mysqli_fetch_assoc($selecionar_img))
     $id_pagina = $row_imagens['id_pagina'];
     echo "<tr>
     <td>$pagina_img</td>
-    <td><a href='http://pare.jf.ifsudestemg.edu.br/biblioteca/_crud/foto/$nome_img'>$nome_img</a></td>
-    <td><a class='delete' href='http://pare.jf.ifsudestemg.edu.br/biblioteca/_crud/deleteimagem.php?idjornal=$id_jornal&id_pagina=$id_pagina&idedicao=$idedicao&nomeedicao=$nomeedicao'>Excluir</a></td>
+    <td><a href='http://localhost/_crud/foto/$nome_img'>$nome_img</a></td>
+    <td><a class='delete' href='http://localhost/_crud/deleteimagem.php?idjornal=$id_jornal&id_pagina=$id_pagina&idedicao=$idedicao&nomeedicao=$nomeedicao'>Excluir</a></td>
     </tr>";
 }
 echo "</table>";
 
-echo "<p><a href='http://pare.jf.ifsudestemg.edu.br/biblioteca/_crud/edicao.php?id_jornal=$id_jornal'>Voltar</a>";
+echo "<p><a href='http://localhost/_crud/edicao.php?id_jornal=$id_jornal'>Voltar</a>";
 echo "<p>
 
-<a href='http://pare.jf.ifsudestemg.edu.br/biblioteca/_crud/index.php'>Página Inicial</a>
+<a href='http://localhost/_crud/index.php'>Página Inicial</a>
 
 </p>";
 ?>

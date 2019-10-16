@@ -8,7 +8,7 @@ $passarid_fa = mysqli_fetch_assoc($passarid);
 $num_pag = $passarid_fa['id_jornal'];
 
 
-header("location: http://pare.jf.ifsudestemg.edu.br/biblioteca/_crud/edicao.php?id_jornal=$num_pag");
+header("location: http://localhost/_crud/edicao.php?id_jornal=$num_pag");
 
 $codigo_delete = "DELETE FROM edicao WHERE id_edicao = '$idedicao'";
 

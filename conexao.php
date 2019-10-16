@@ -1,8 +1,8 @@
 <?php
 $servidor = "localhost";
-$usuario = "pare";
-$senha = "paresisead";
-$dbname = "pare";
+$usuario = "root";
+$senha = "";
+$dbname = "jornais";
 
 //Cria a conexão
 $conn = mysqli_connect($servidor, $usuario, $senha, $dbname);

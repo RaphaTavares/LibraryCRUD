@@ -12,5 +12,5 @@
     
     $num_pag = $_GET['passarid'];
 
-    header("location: http://pare.jf.ifsudestemg.edu.br/biblioteca/_crud/edicao.php?id_jornal=$num_pag");
+    header("location: http://localhost/_crud/edicao.php?id_jornal=$num_pag");
     ?>

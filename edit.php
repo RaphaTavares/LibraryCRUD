@@ -55,17 +55,6 @@ $row_jornal = mysqli_fetch_assoc($kuery_jornal);
     <form method="POST" action="update.php">
     <?php
     
-    /* $idedicao = $_GET["idedicao"];
-    $host = "localhost";
-    $username = "pare";
-    $password = "paresisead";
-    $db = "pare";
-
-    $conn = mysqli_connect($host,$username,$password,$db) or die("Impossível Conectar"); 
-    */
-    //$kuery_edicao = mysqli_query($conn, "SELECT * FROM edicao WHERE id_edicao = '$idedicao'");
-
-    //$row_edicao = mysqli_fetch_assoc($kuery_edicao);
     $id_jornal = $row_edicao["id_jornal"];
     $id_edicao = $row_edicao["id_edicao"];
     echo "<input type='hidden' name='idjornal' value='$id_jornal'>

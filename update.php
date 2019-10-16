@@ -2,14 +2,6 @@
 session_start();
 include_once("conexao.php");
 
-/*
-$host = "localhost";
-$username = "pare";
-$password = "paresisead";
-$db = "pare";
-
-$conn = mysqli_connect($host,$username,$password,$db) or die("Impossível Conectar"); 
-*/
 $idjornal = $_POST["idjornal"];
 
 $nome_edicao = filter_input(INPUT_POST, 'nome_edicao', FILTER_SANITIZE_STRING);
@@ -30,7 +22,7 @@ $query_update = "UPDATE edicao SET titulo_edicao = '$nome_edicao' , id_jornal = 
 $exec = mysqli_query($conn, $query_update);
 
 echo "$nome_edicao, $id_jornal_fk, $data_public, $id_edicao";
-header("location: http://pare.jf.ifsudestemg.edu.br/biblioteca/_crud/edicao.php?id_jornal=$idjornal");
+header("location: http://localhost/_crud/edicao.php?id_jornal=$idjornal");
 
 
 

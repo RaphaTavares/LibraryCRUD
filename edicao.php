@@ -190,10 +190,10 @@ echo"<tr class='table-title'>
     $nomeedicao = $row_edicao['titulo_edicao'];
   echo"<tr>
 <td>{$row_edicao['id_edicao']}</td>
-<td><a class='imagens' href='http://pare.jf.ifsudestemg.edu.br/biblioteca/_crud/imagens.php?idedicao=$idedicao&nomeedicao=$nomeedicao&idjornal=$passarid'>{$row_edicao['titulo_edicao']}</a></td>
+<td><a class='imagens' href='http://localhost/_crud/imagens.php?idedicao=$idedicao&nomeedicao=$nomeedicao&idjornal=$passarid'>{$row_edicao['titulo_edicao']}</a></td>
 <td>{$row_edicao['data_publicacao']}</td>
-<td><a class='delete' href='http://pare.jf.ifsudestemg.edu.br/biblioteca/_crud/delete.php?idedicao=$idedicao'>Excluir</a></td>
-<td><a class='edit' href='http://pare.jf.ifsudestemg.edu.br/biblioteca/_crud/edit.php?idedicao=$idedicao'>Editar</a></td>
+<td><a class='delete' href='http://localhost/_crud/delete.php?idedicao=$idedicao'>Excluir</a></td>
+<td><a class='edit' href='http://localhost/_crud/edit.php?idedicao=$idedicao'>Editar</a></td>
 </tr>";
   }
 echo"</table>";

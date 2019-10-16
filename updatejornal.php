@@ -2,14 +2,6 @@
 session_start();
 include_once("conexao.php");
 
-/*
-$host = "localhost";
-$username = "pare";
-$password = "paresisead";
-$db = "pare";
-
-$conn = mysqli_connect($host,$username,$password,$db) or die("Impossível Conectar"); 
-*/
 $idjornal = $_POST["idjornal"];
 
 $nome_jornal = filter_input(INPUT_POST, 'nome_jornal', FILTER_SANITIZE_STRING);
@@ -27,7 +19,7 @@ $query_update = "UPDATE jornal SET nome_jornal = '$nome_jornal' , descricao_jorn
 
 $exec = mysqli_query($conn, $query_update);
 
-header("location: http://pare.jf.ifsudestemg.edu.br/biblioteca/_crud/index.php");
+header("location: http://localhost/_crud/index.php");
 
 
 

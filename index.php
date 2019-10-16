@@ -93,11 +93,11 @@ echo"<tr class='table-title'>
     $id_jornal = $row_jornais['id_jornal'];
   echo"<tr>
 <td>{$row_jornais['id_jornal']}</td>
-<td><a href='http://pare.jf.ifsudestemg.edu.br/biblioteca/_crud/edicao.php?id_jornal=$id_jornal'>{$row_jornais['nome_jornal']}</td></a>
+<td><a href='http://localhost/_crud/edicao.php?id_jornal=$id_jornal'>{$row_jornais['nome_jornal']}</td></a>
 <td>{$row_jornais['data_criacao']}</td>
 <td>{$row_jornais['descricao_jornal']}</td>
-<td><a class='delete' href='http://pare.jf.ifsudestemg.edu.br/biblioteca/_crud/deletejornal.php?id_jornal=$id_jornal'>Excluir</a></td>
-<td><a class='edit' href='http://pare.jf.ifsudestemg.edu.br/biblioteca/_crud/editjornal.php?id_jornal=$id_jornal'>Editar</a></td>
+<td><a class='delete' href='http://localhost/_crud/deletejornal.php?id_jornal=$id_jornal'>Excluir</a></td>
+<td><a class='edit' href='http://localhost/_crud/editjornal.php?id_jornal=$id_jornal'>Editar</a></td>
 </tr>";
   }
 echo"</table>";
