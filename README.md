@@ -1,3 +1,3 @@
 # LibraryCRUD
-That's a CRUD composed by 5 tables: newspapers, editions, pages, key words and the table to link pages and key words.
+That's a CRUD composed by 3 tables: newspapers, editions and pages.
 I made this as a voluntary project in my college.
