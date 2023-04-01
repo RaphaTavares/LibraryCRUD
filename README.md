@@ -1,3 +1,3 @@
 # LibraryCRUD
-That's a CRUD composed by 3 tables: newspapers, editions and pages.
-I made this as a voluntary project in my college.
+This is a CRUD composed by 3 tables and that implements pictures upload: newspapers, editions and pages.
+I developed it as a voluntary project at college.
